@@ -43,7 +43,7 @@ String weekDays[7]={"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 String months[12]={"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
 // Your Domain name with URL path or IP address with path
-String openWeatherMapApiKey = "a31375e54127c9fb873bd81642cbb2b5";
+String openWeatherMapApiKey = "apt_key";
 // Example:
 //String openWeatherMapApiKey = "bd939aa3d23ff33d3c8f5dd1dd435";
 
@@ -62,7 +62,7 @@ void setup()
   tft.setTextWrap(true);
   tft.print("Hello! Waiting for connection...");
 
-  WiFi.begin("TP-LINK_B4DE", "24398251");
+  WiFi.begin("ssid", "password");
 
   Serial.print("Connecting");
   while (WiFi.status() != WL_CONNECTED)
